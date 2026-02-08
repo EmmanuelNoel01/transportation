@@ -55,21 +55,6 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
       body: SafeArea(
         child: Stack(
           children: [
-            // Status bar time (9:41) at top right
-            Positioned(
-              top: 10,
-              right: 20,
-              child: Text(
-                '9:41',
-                style: TextStyle(
-                  color: Colors.white.withOpacity(0.9),
-                  fontSize: 16,
-                  fontWeight: FontWeight.w600,
-                  letterSpacing: 0.5,
-                ),
-              ),
-            ),
-            
             // Center logo and text
             Center(
               child: Column(

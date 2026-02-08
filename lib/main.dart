@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:muno_watch/views/get_started.dart';
+import 'package:muno_watch/views/settings.dart';
 import 'package:muno_watch/views/splashscreen.dart';
+
+import 'views/destination.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,6 +46,7 @@ class _AppEntryPointState extends State<AppEntryPoint> {
   Widget build(BuildContext context) {
     return _showSplash
         ? SplashScreen(onAnimationComplete: _onSplashComplete)
-        : const OnboardingScreen1();
+        // : const OnboardingScreen1();
+        :  MapScreen();
   }
 }

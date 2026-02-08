@@ -20,6 +20,9 @@ android {
     }
 
     defaultConfig {
+        minSdkVersion 21
+        multiDexEnabled true
+
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.muno_watch"
         // You can update the following values to match your application needs.
