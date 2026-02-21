@@ -3,7 +3,9 @@ import 'package:muno_watch/views/get_started.dart';
 import 'package:muno_watch/views/settings.dart';
 import 'package:muno_watch/views/splashscreen.dart';
 
+import 'views/DriverTripScreen.dart';
 import 'views/destination.dart';
+import 'views/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,6 +49,7 @@ class _AppEntryPointState extends State<AppEntryPoint> {
     return _showSplash
         ? SplashScreen(onAnimationComplete: _onSplashComplete)
         // : const OnboardingScreen1();
-        :  MapScreen();
+        // :  const DriverTripScreen(accountType: 'Car',);
+        : const HomeScreen();
   }
 }

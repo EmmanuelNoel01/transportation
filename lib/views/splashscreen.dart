@@ -92,15 +92,15 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                               color: Colors.grey[800],
                               borderRadius: BorderRadius.circular(20),
                             ),
-                            child: Column(
+                            child: const Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
-                                const Icon(
+                                Icon(
                                   Icons.local_shipping,
                                   size: 80,
                                   color: Colors.white,
                                 ),
-                                const SizedBox(height: 10),
+                                SizedBox(height: 10),
                                 Text(
                                   'Logo Error',
                                   style: TextStyle(
@@ -125,7 +125,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                         child: child,
                       );
                     },
-                    child: Column(
+                    child: const Column(
                       children: [
                         Text(
                           'CASTRO',
@@ -138,7 +138,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
                           ),
                         ),
                         
-                        const SizedBox(height: 12),
+                        SizedBox(height: 12),
                         
                         Text(
                           'TRANSPORTERS',

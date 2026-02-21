@@ -15,7 +15,7 @@ class OnboardingScreen3 extends StatelessWidget {
           child: Column(
             children: [
               // Status bar time (9:41)
-              SizedBox(
+              const SizedBox(
                 height: 40,
                 child: Align(
                   alignment: Alignment.centerRight,
@@ -95,7 +95,7 @@ class OnboardingScreen3 extends StatelessWidget {
                     const SizedBox(height: 30), // Space between dots and text
                     
                     // Title
-                    Text(
+                    const Text(
                       'Safe & Secure Payments',
                       textAlign: TextAlign.center,
                       style: TextStyle(

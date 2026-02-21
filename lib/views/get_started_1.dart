@@ -78,7 +78,7 @@ class OnboardingScreen2 extends StatelessWidget {
                     const SizedBox(height: 30), // Space between dots and text
                     
                     // Title
-                    Text(
+                    const Text(
                       'Track Your Parcel in\nReal-Time',
                       textAlign: TextAlign.center,
                       style: TextStyle(

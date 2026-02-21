@@ -3,14 +3,14 @@ import 'package:muno_watch/views/home.dart';
 import 'package:muno_watch/views/login.dart';
 
 class ProfileScreen extends StatefulWidget {
-  const ProfileScreen({Key? key}) : super(key: key);
+  const ProfileScreen({super.key});
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-  int _currentIndex = 2; // Set to 2 to indicate we're on Profile screen
+  final int _currentIndex = 2; // Set to 2 to indicate we're on Profile screen
 
   void _logout() {
     // Show confirmation dialog
@@ -103,20 +103,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              // Time display (9:41)
-                              Text(
-                                '9:41',
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 16,
-                                  fontWeight: FontWeight.w600,
-                                ),
-                              ),
-                              
                               // Logout button
                               IconButton(
                                 onPressed: _logout,
-                                icon: Icon(
+                                icon: const Icon(
                                   Icons.logout,
                                   color: Colors.white,
                                   size: 24,
@@ -190,9 +180,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                     child: Column(
                                       crossAxisAlignment: CrossAxisAlignment.start,
                                       children: [
-                                        Text(
+                                        const Text(
                                           'Tanya Myroniuk',
-                                          style: const TextStyle(
+                                          style: TextStyle(
                                             fontSize: 18,
                                             fontWeight: FontWeight.w600,
                                             color: Colors.white,
@@ -229,9 +219,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                         const SizedBox(height: 30),
 
                         // Trips Section
-                        Text(
+                        const Text(
                           'Trips',
-                          style: const TextStyle(
+                          style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.w600,
                             color: Colors.white,
@@ -341,13 +331,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   Container(width: 80),
 
                   // Profile Navigation Item (Active)
-                  Expanded(
+                  const Expanded(
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Icon(
                           Icons.person,
-                          color: const Color.fromARGB(255, 13, 137, 246),
+                          color: Color.fromARGB(255, 13, 137, 246),
                           size: 44,
                         ),
                       ],

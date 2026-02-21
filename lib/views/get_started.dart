@@ -14,7 +14,7 @@ class OnboardingScreen1 extends StatelessWidget {
           child: Column(
             children: [
               // Status bar time (9:41)
-              SizedBox(
+              const SizedBox(
                 height: 40,
                 child: Align(
                   alignment: Alignment.centerRight,
@@ -94,7 +94,7 @@ class OnboardingScreen1 extends StatelessWidget {
                     const SizedBox(height: 30),
                     
                     // Title
-                    Text(
+                    const Text(
                       'Fast Delivery in\nMasindi Town',
                       textAlign: TextAlign.center,
                       style: TextStyle(

@@ -3,7 +3,7 @@ import 'package:intl/intl.dart';
 import 'package:muno_watch/views/login.dart';
 
 class CreateProfileScreen extends StatefulWidget {
-  const CreateProfileScreen({Key? key}) : super(key: key);
+  const CreateProfileScreen({super.key});
 
   @override
   State<CreateProfileScreen> createState() => _CreateProfileScreenState();
@@ -520,14 +520,14 @@ class _CreateProfileScreenState extends State<CreateProfileScreen> {
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.w600,
-                            color: const Color.fromARGB(
+                            color: Color.fromARGB(
                               255,
                               13,
                               137,
                               246,
                             ), // Blue color
                             decoration: TextDecoration.underline,
-                            decorationColor: const Color.fromARGB(
+                            decorationColor: Color.fromARGB(
                               255,
                               13,
                               137,
